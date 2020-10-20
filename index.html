@@ -5,14 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-
+    <!-- 連結 jQuery Mobile -->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="themes/aaa.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
+
+
+
     
     <link rel="icon" href="hedgehog.png" sizes="60x60" type="image/x-icon">
     <title>1013</title>
 </head>
+
+<style>
+
+    #page02 .ui-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #page00 > .ui-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        text-align: center;
+    }
+
+    #page04 > .ui-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+</style>
+
 <body>
     <!--首頁-->
     <div data-role="page" id="page00">
@@ -26,12 +60,13 @@
         <div role="main" class="ui-content">
 
             <p>人生像是一盒巧克力<br>來伊美奇體驗各式人生吧！</p>
-            <img src="dark.jpg" alt="" height="550" width="500"><br>
-            <a href="#page01" data-transition="fade">關於伊美奇</a>
-            <a href="#page02" data-transition="slideup">巧克力即享</a>
-            <a href="#aboutus" data-transition="slide">關於我們</a>
-            <a href="#page04" data-transition="slideup">門市據點</a>
-
+            <img src="dark.jpg" alt="" height="550" width="500" class="darkimg"><br>
+            <div>
+                <a href="#page01" data-transition="fade">關於伊美奇</a>
+                <a href="#page02" data-transition="slideup">巧克力即享</a>
+                <a href="#aboutus" data-transition="slide">關於我們</a>
+                <a href="#page04" data-transition="slideup">門市據點</a>
+            </div>
         </div><!-- /content -->
 
         <div data-role="footer" data-position="fixed">
@@ -83,25 +118,23 @@
 
         </div><!-- /header -->
 
-        <div role="main" class="ui-content">
+        <div role="main" class="ui-content" >
             
             <h3>一、店長推薦 Boss's favorite</h3>
-            <img src="Boss's favorite.jpg" alt="" height="250" width="200"><br>
+            <img src="Bo.jpg" alt="" height="250" width="200"><br>
             <h3>二、人氣熱銷 Popular</h3>
             <img src="Popular.jpg" alt="" height="250" width="200"><br>
             <h3>三、最新產品 Newest</h3>
             <img src="Newestdd.jpg" alt="" height="250" width="200"><br>
             <h3>四、黑巧克力 Black Chocolate</h3>
-            <img src="Black Chocolatedd.jpg" alt="" height="250" width="200"><br>
+            <img src="Bl.jpg" alt="" height="250" width="200"><br>
             <h3>五、牛奶巧克力 Milk Chocolate</h3>
-            <img src="Milk Chocolatedd.jpg" alt="" height="250" width="200"><br>
+            <img src="Milk.jpg" alt="" height="250" width="200"><br>
             <h3>六、堅果巧克力 Nut Chocolate</h3>
-            <img src="Nut Chocolatedd.jpg" alt="" height="250" width="200"><br>
-            <a href="#page00" class="ui-btn ui-icon-home ui-btn-icon-left">回到首頁</a>
-            <a href="#page00">回到首頁</a>
-           
+            <img src="Nut.jpg" alt="" height="250" width="200"><br>
+                       
         </div><!-- /content -->
-
+        <a href="#page00" class="ui-btn ui-icon-home ui-btn-icon-left">回到首頁</a>
         <div data-role="footer" data-position="fixed">
 
             <h4>Copyright &copy; 2020.10.13</h4>
@@ -175,13 +208,10 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.1868876513145!2d120.21628851473632!3d22.980154184974527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e769cef573703%3A0x28bdb092083320d!2zNzAx5Y-w5Y2X5biC5p2x5Y2A5bSH5b636LevMTAw6Jmf!5e0!3m2!1szh-TW!2stw!4v1592481666797!5m2!1szh-TW!2stw" width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
             </iframe>
             <br>
-            <a href="#page00" class="ui-btn ui-icon-home ui-btn-icon-left">回到首頁</a>
-            <a href="#page00">回到首頁</a>
 
         </div><!-- /content -->
-
+        <a href="#page00" class="ui-btn ui-icon-home ui-btn-icon-left">回到首頁</a>
         <div data-role="footer" data-position="fixed">
-
             <h4>Copyright &copy; 2020.10.13</h4>
 
         </div><!-- /footer -->
